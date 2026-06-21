@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan's Porfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="main-layout">
+        <div class="header-container">
+            <div class="tab-container">
+                <div class="logo">
+                    <svg width="140" height="60" viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg">
+
+                        <!-- Gradient -->
+                        <defs>
+                            <linearGradient id="rpGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#6aa9ff"/>
+                                <stop offset="50%" stop-color="#4facfe"/>
+                                <stop offset="100%" stop-color="#a78bfa" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- R -->
+                        <text x="10" y="40"
+                              font-family="Arial, sans-serif"
+                              font-size="38"
+                              font-weight="800"
+                              fill="url(#rpGrad)"
+                              letter-spacing="-6">
+                            R
+                        </text>
+
+                        <!-- P (slightly overlapped to create interlock feel) -->
+                        <text x="32" y="40"
+                              font-family="Arial, sans-serif"
+                              font-size="38"
+                              font-weight="800"
+                              fill="url(#rpGrad)"
+                              letter-spacing="-6">
+                            P
+                        </text>
+
+                        <!-- Underline -->
+                        <line x1="10" y1="55" x2="95" y2="55"
+                              stroke="#ffffff"
+                              stroke-width="1"
+                              stroke-linecap="round"
+                              opacity="1"/>
+
+                    </svg>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="hero-section">
+                <div class="intro-container">
+                    <div class="text-container">
+                        <p class="intro-p">Hi I'm</p><br>
+                        <h1>Rohan Patel</h1><br>
+                        <p class="intro-p">Machine Learning & AI Engineer</p><br><br>
+                        <p id="description">I build intelligent systems that solve real-world <br> problems using Machine Learning, Deep Learning, <br> and Large Language Models.</p>
+                    </div>
+                    <div class="button-container">
+                        <button type="button" id="projects-btn">View My Projects</button>
+                        <button type="button" id="resume-btn">Download Resume</button>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="./assets/images/hero_img.JPG">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
