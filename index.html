@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -17,21 +18,12 @@
                 <div class="logo">
                     <svg width="140" height="60" viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg">
 
-                        <!-- Gradient -->
-                        <defs>
-                            <linearGradient id="rpGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="#6aa9ff"/>
-                                <stop offset="50%" stop-color="#4facfe"/>
-                                <stop offset="100%" stop-color="#a78bfa" />
-                            </linearGradient>
-                        </defs>
-
                         <!-- R -->
                         <text x="10" y="40"
                               font-family="Arial, sans-serif"
                               font-size="38"
                               font-weight="800"
-                              fill="url(#rpGrad)"
+                              fill="#ffffff"
                               letter-spacing="-6">
                             R
                         </text>
@@ -41,13 +33,13 @@
                               font-family="Arial, sans-serif"
                               font-size="38"
                               font-weight="800"
-                              fill="url(#rpGrad)"
+                              fill="#60a5fa"
                               letter-spacing="-6">
                             P
                         </text>
 
                         <!-- Underline -->
-                        <line x1="10" y1="55" x2="95" y2="55"
+                        <line x1="10" y1="42" x2="72" y2="42"
                               stroke="#ffffff"
                               stroke-width="1"
                               stroke-linecap="round"
@@ -68,24 +60,110 @@
             <div class="hero-section">
                 <div class="intro-container">
                     <div class="text-container">
-                        <p class="intro-p">Hi I'm</p><br>
-                        <h1>Rohan Patel</h1><br>
-                        <p class="intro-p">Machine Learning & AI Engineer</p><br><br>
-                        <p id="description">I build intelligent systems that solve real-world <br> problems using Machine Learning, Deep Learning, <br> and Large Language Models.</p>
+                        <p class="intro-p">Hi I'm</p>
+                        <h1>Rohan Patel</h1>
+                        <p class="intro-p">Machine Learning & AI Engineer</p>
+                        <p id="description">
+                           I build intelligent systems that solve real-world problems using Machine Learning, Deep Learning, and Large Language Models. 
+                           Passionate about turning complex data into impactful solutions.
+                        </p>
                     </div>
                     <div class="button-container">
                         <button type="button" id="projects-btn">View My Projects</button>
                         <button type="button" id="resume-btn">Download Resume</button>
+                    </div>
+                    <div class="connect-container">
+                        <p class="connect-title">Let's Connect</p>
+                        <div class="icon-container">
+                            <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                            <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+
+                            <a href="mailto:your@email.com" aria-label="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="image-container">
                     <img src="./assets/images/hero_img.JPG">
                 </div>
             </div>
-
         </div>
 
+
+        <section class="featured-projects">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <a href="#" class="view-projects-link">View all projects <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="./assets/images/img1.jpg">
+                    <h3>Pneumonia Detection Model</h3>
+                    <p>
+                       Deep learning-based image classification model that detects 
+                       pneumonia from chest x-ray images using CNN.
+                    </p>
+                    <div class="tech-tag">Computer Vision</div>
+                </div>
+                <div class="project-card">
+                    <img src="./assets/images/img2.jpg">
+                    <h3>AI medical chatbot</h3>
+                    <p>
+                        Fine-tuned LLM (Large Language Model) designed to provide 
+                        reliable health-related guidance and support.
+                    </p>
+                    <div class="tech-tag">NLP / LLM</div>
+                </div>
+                <div class="project-card">
+                    <img src="./assets/images/img3.jpg">
+                    <h3>ASL Fingerspelling Translator</h3>
+                    <p>
+                        Real-time ASL fingerspelling recognition system powered by
+                        Computer Vision and Deep Learning.
+                    </p>
+                    <div class="tech-tag">Deep Learning</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="what-i-do">
+            <div class="what-i-do-header">
+                <h2 class="what-i-do-title">What I Do</h2>
+            </div>
+
+            <div class="capabilities-grid">
+                <div class="capability-box">
+                    <i class="fa-solid fa-brain" id="i1"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Building models that learn from data and make predictions</p>
+                </div>
+                <div class="capability-box">
+                    <i class="fa-solid fa-network-wired" id="i2"></i>
+                    <h3>Deep Learning</h3>
+                    <p>Training neural networks for complex real-world problems</p>
+                </div>
+                <div class="capability-box">
+                    <i class="fa-solid fa-comments" id="i3"></i>
+                    <h3>LLMs & NLP</h3>
+                    <p>Working with large language models and RAG systems</p>
+                </div>
+                <div class="capability-box">
+                    <i class="fa-solid fa-chart-line" id="i4"></i>
+                    <h3>Data Analysis</h3>
+                    <p>Extracting insights from data through EDA and visualization</p>
+                </div>
+            </div>
+        </section>
+
     </div>
+
+    <script src="./js/script.js"></script>
 
 
 </body>
