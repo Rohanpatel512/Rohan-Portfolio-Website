@@ -1,3 +1,4 @@
+// Navbar scroll code for all pages
 const navbar = document.querySelector(".tab-container");
 
 window.addEventListener("scroll", () => {

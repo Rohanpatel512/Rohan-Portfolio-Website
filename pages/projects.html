@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/projects.css">
+</head>
+<body>
+
+    <div class="main-layout">
+        <div class="header-container">
+            <div class="tab-container">
+                <div class="logo">
+                    <svg width="140" height="60" viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg">
+
+                        <!-- R -->
+                        <text x="10" y="40"
+                              font-family="Arial, sans-serif"
+                              font-size="38"
+                              font-weight="800"
+                              fill="#ffffff"
+                              letter-spacing="-6">
+                            R
+                        </text>
+
+                        <!-- P (slightly overlapped to create interlock feel) -->
+                        <text x="32" y="40"
+                              font-family="Arial, sans-serif"
+                              font-size="38"
+                              font-weight="800"
+                              fill="#60a5fa"
+                              letter-spacing="-6">
+                            P
+                        </text>
+
+                        <!-- Underline -->
+                        <line x1="10" y1="42" x2="72" y2="42"
+                              stroke="#ffffff"
+                              stroke-width="1"
+                              stroke-linecap="round"
+                              opacity="1"/>
+
+                    </svg>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="projects-title-container">
+                <div class="projects-title">
+                    <h2>My Projects</h2>
+                </div>
+                <div class="projects-description">
+                    <p>Here are some of the projects I've worked on. Each project
+                        presents a unique challenge and learning experience.
+                    </p>
+                </div>
+                <div class="projects-tabs">
+                    <button type="button" class="projects-btn">All</button>
+                    <button type="button" class="projects-btn">Machine Learning</button>
+                    <button type="button" class="projects-btn">Computer Vision</button>
+                    <button type="button" class="projects-btn">LLMs/NLP</button>
+                    <button type="button" class="projects-btn">Other</button>
+                </div>
+            </div>
+        </div>
+        <div class="projects-list-container">
+        </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+    <script src="../js/projects.js"></script>
+
+</body>
+</html>
