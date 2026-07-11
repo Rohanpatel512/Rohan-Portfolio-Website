@@ -73,6 +73,42 @@ body {
     color: white;
 }
 
+.nav-links li a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.3px;
+    transition: color 0.3s ease;
+
+}
+
+/* hover effect */
+.nav-links li a:hover {
+    color: #ffffff;
+}
+
+/* animated underline */
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 0%;
+    height: 2px;
+
+    background: #4da3ff;
+    border-radius: 10px;
+
+    transition: width 0.3s ease;
+}
+
+/* expand underline on hover */
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
 /* About section desgin */
 .about-section {
     display: grid;

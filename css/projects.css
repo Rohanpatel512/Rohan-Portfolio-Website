@@ -68,8 +68,45 @@ body {
 
 /* links */
 .nav-links li a {
+    position: relative;
+    display: inline-block;
     text-decoration: none;
     color: white;
+    letter-spacing: 0.3px;
+    transition: color 0.3s ease;
+
+}
+
+/* hover effect */
+.nav-links li a:hover {
+    color: #ffffff;
+}
+
+/* animated underline */
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 0%;
+    height: 2px;
+
+    background: #4da3ff;
+    border-radius: 10px;
+
+    transition: width 0.3s ease;
+}
+
+/* expand underline on hover */
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
 }
 
 /** Projects title container design **/
@@ -132,7 +169,7 @@ body {
 }
 
 .projects-list-container {
-    min-height: 60vh;
+    min-height: auto;
     padding-left: 70px;
     display: flex;
     flex-direction: column;
@@ -145,9 +182,25 @@ body {
     grid-template-columns: 0.7fr 1.8fr;
     gap: 30px;
     width: 80%;
-    padding-bottom: 20px;
+    max-height: 250px;
+    overflow: hidden;
     background-color: #141b2e;
     border-radius: 10px;
+}
+
+.image-container {
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 70%;
+
+    object-fit: cover;
+    display: block;
+
+    transition: transform .35s ease;
 }
 
 .text-container {

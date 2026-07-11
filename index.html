@@ -15,6 +15,7 @@
     <div class="main-layout">
         <div class="header-container">
             <div class="tab-container">
+                <div class="menu-overlay"></div>
                 <div class="logo">
                     <svg width="140" height="60" viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg">
 
@@ -56,22 +57,30 @@
                     </ul>
                 </nav>
 
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
             </div>
             <div class="hero-section">
                 <div class="intro-container">
                     <div class="text-container">
-                        <p class="intro-p">Hi I'm</p>
+                        <p class="intro-p" id="p1">Hi I'm</p>
                         <h1>Rohan Patel</h1>
-                        <p class="intro-p">Machine Learning & AI Engineer</p>
+                        <p class="intro-p" id="p2">Machine Learning & AI Engineer</p>
                         <p id="description">
                            I build intelligent systems that solve real-world problems using Machine Learning, Deep Learning, and Large Language Models. 
                            Passionate about turning complex data into impactful solutions.
                         </p>
                     </div>
+                    <!--
                     <div class="button-container">
                         <button type="button" id="projects-btn">View My Projects</button>
                         <button type="button" id="resume-btn">Download Resume</button>
                     </div>
+                    -->
                     <div class="connect-container">
                         <p class="connect-title">Let's Connect</p>
                         <div class="icon-container">
@@ -90,7 +99,7 @@
                     </div>
                 </div>
                 <div class="image-container">
-                    <img src="./assets/images/hero_img.JPG">
+                    <img src="./assets/images/hero_img.png">
                 </div>
             </div>
         </div>
@@ -103,7 +112,7 @@
             </div>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="./assets/images/img1.jpg">
+                    <img src="./assets/images/pneumonia.svg">
                     <h3>Pneumonia Detection Model</h3>
                     <p>
                        Deep learning-based image classification model that detects 
@@ -112,7 +121,7 @@
                     <div class="tech-tag">Computer Vision</div>
                 </div>
                 <div class="project-card">
-                    <img src="./assets/images/img2.jpg">
+                    <img src="./assets/images/chatbot.svg">
                     <h3>AI medical chatbot</h3>
                     <p>
                         Fine-tuned LLM (Large Language Model) designed to provide 
@@ -121,7 +130,7 @@
                     <div class="tech-tag">NLP / LLM</div>
                 </div>
                 <div class="project-card">
-                    <img src="./assets/images/img3.jpg">
+                    <img src="./assets/images/hand.svg">
                     <h3>ASL Fingerspelling Translator</h3>
                     <p>
                         Real-time ASL fingerspelling recognition system powered by
@@ -163,7 +172,8 @@
 
     </div>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/navbar.js"></script>
+    <!--<script src="./js/script.js"></script>-->
 
 
 </body>

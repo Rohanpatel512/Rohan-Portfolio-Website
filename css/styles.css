@@ -9,6 +9,25 @@ body {
     background-color: #0f1830;
 }
 
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,.5);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all .3s ease;
+
+    z-index: 999;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
 .main-layout {
     display: flex;
     flex-direction: column;
@@ -20,7 +39,8 @@ body {
 .header-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     padding-top: 15%;
     font-family: 'Roboto', sans-serif;
 }
@@ -68,15 +88,45 @@ body {
 
 /* links */
 .nav-links li a {
+    position: relative;
+    display: inline-block;
     text-decoration: none;
     color: white;
+    letter-spacing: 0.3px;
+    transition: color 0.3s ease;
 
+}
+
+/* hover effect */
+.nav-links li a:hover {
+    color: #ffffff;
+}
+
+/* animated underline */
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 0%;
+    height: 2px;
+
+    background: #4da3ff;
+    border-radius: 10px;
+
+    transition: width 0.3s ease;
+}
+
+/* expand underline on hover */
+.nav-links li a:hover::after {
+    width: 100%;
 }
 
 .hero-section {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
-    gap: 60px;
+    gap: 80px;
 
     max-width: 1100px;
     margin: 0 auto;
@@ -119,8 +169,16 @@ body {
 }
 
 .intro-p {
-    /*color: #0571f5;*/
-    color: #0c6fe8;
+    background: linear-gradient(
+        90deg,
+        #60a5fa,
+        #38bdf8
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    font-weight: 700;
 }
 
 .button-container {
@@ -157,29 +215,45 @@ body {
     display: flex;
     align-items: center; 
     justify-content: center;
+    position: relative;
+    padding: 20px;
 }
 
-/*
-.image-container img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-
-    border-radius: 50%;   
-    border: 3px solid #4facfe; 
-}
-*/
 
 .image-container img {
-    width: 380px;
-    height: 380px;
+    width: 450px;
+    height: 450px;
 
-    object-fit: cover;
-    border-radius: 50%;
+    /* Core SaaS depth */
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+
+    /* Smooth + modern */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 
     border: 3px solid rgba(96, 165, 250, 0.6);
-    box-shadow: 0 0 40px rgba(96, 165, 250, 0.15);
-    transition: 0.3s ease;
+    
+    object-fit: cover;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        orange,
+        transparent 100%
+    );
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(
+    circle,
+    rgba(100, 150, 255, 0.25),
+    transparent 70%
+  );
+
+  filter: blur(60px);
+  z-index: 0;
 }
 
 .image-container img:hover {
@@ -243,7 +317,8 @@ body {
     padding-right: 60px;
     padding-bottom: 15px;
     padding-left: 60px;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
 }
 
 .section-header {
@@ -304,11 +379,10 @@ body {
     border-radius: 14px;
     overflow: hidden;
 
-    padding: 20px;
+    padding: 5px;
 
     display: flex;
     flex-direction: column;
-
     transition: all 0.25s ease;
     font-family: 'Roboto', sans-serif;
 }
@@ -356,7 +430,7 @@ body {
 /* What I Do Section Design */
 
 .what-i-do {
-    padding: 10px 60px 100px;
+    padding: 0px 60px 80px;
 }
 
 .what-i-do-header {
@@ -457,4 +531,198 @@ body {
 
 #i4 {
     color: #34d399;
+}
+
+/** Response web page design **/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.hamburger span {
+    width: 26px;
+    height: 3px;
+    border-radius: 999px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+/* Large desktops */
+@media (max-width:1200px){
+
+    .hero-section{
+        max-width:950px;
+        gap:50px;
+    }
+
+    .text-container h1{
+        font-size:52px; 
+    }
+
+    .image-container img{
+        width:380px;
+        height:380px;
+    }
+
+    .projects-grid{
+        gap:20px;
+    }
+}
+
+@media (max-width:992px){
+
+    .header-container{
+        padding-top:120px;
+    }
+
+    .hero-section{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:40px;
+    }
+
+    .intro-container{
+        align-items:center;
+    }
+
+    .text-container{
+        max-width:700px;
+    }
+
+    .image-container{
+        order:-1;
+    }
+
+    .image-container img{
+        width:320px;
+        height:320px;
+    }
+
+    .connect-container{
+        align-items:center;
+    }
+
+    .projects-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .capabilities-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:768px){
+
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        position: fixed;
+
+        top: 0;
+        right: -100%;
+
+        width: 280px;
+        height: 100vh;
+
+        background: #141b2e;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: right 0.3s ease;
+
+        box-shadow: -10px 0 30px rgba(0,0,0,.3);
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    .tab-container{
+        padding:0 25px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        gap: 35px;
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .nav-links li a {
+        font-size: 20px;
+    }
+
+    .text-container h1{
+        font-size:46px;
+    }
+
+    .text-container p{
+        font-size:18px;
+    }
+
+    .image-container img{
+        width:270px;
+        height:270px;
+    }
+
+    .featured-projects{
+        padding:60px 30px;
+    }
+
+    .what-i-do{
+        padding:60px 30px;
+    }   
+
+    .projects-grid{
+        grid-template-columns:1fr;
+    }
+
+    .capabilities-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .header-container{
+        padding-top:100px;
+    }
+
+    .tab-container{
+        padding:0 18px;
+        height:65px;
+    }
+
+    .logo svg{
+        height:34px;
+    }
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }

@@ -104,6 +104,7 @@ function buildContainers(project) {
     projectDescription.className = "project-description-container";
     skillsTags.className = "skills-tags-container";
     linksContainer.className = "links-container";
+
                 
     const typeTag = document.createElement("span");
     const title = document.createElement("h3");
@@ -153,6 +154,12 @@ function buildContainers(project) {
         linksContainer.appendChild(demoLink);
     }
 
+    const projectImage = document.createElement("img");
+    if (project.image != null) {
+        projectImage.src = project.image;
+        imageDiv.appendChild(projectImage);
+    }
+
                 
     textDiv.appendChild(projectTitleBox)
     textDiv.appendChild(projectDescription);
@@ -162,7 +169,7 @@ function buildContainers(project) {
     projectDiv.appendChild(imageDiv);
     projectDiv.appendChild(textDiv);
 
-
+    
     projects_list_container.appendChild(projectDiv);
 
 }
