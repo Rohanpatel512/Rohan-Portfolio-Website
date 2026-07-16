@@ -533,6 +533,36 @@ body {
     color: #34d399;
 }
 
+/** Footer section design **/
+.footer{
+    margin-top:80px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:16px;
+
+    width:100%;
+
+    padding:24px 20px;
+
+    border-top:1px solid rgba(255,255,255,0.08);
+
+    background:#0f1830;
+}
+
+.footer-logo svg{
+    height:28px;
+    width:auto;
+}
+
+.footer-text p{
+    color:#b4bfd1;
+    font-family:'Roboto', sans-serif;
+    font-size:14px;
+    letter-spacing:0.3px;
+}
+
 /** Response web page design **/
 .hamburger {
     display: none;
@@ -617,7 +647,6 @@ body {
 }
 
 @media (max-width:768px){
-
 
     .hamburger {
         display: flex;
