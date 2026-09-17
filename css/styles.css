@@ -236,7 +236,7 @@ body {
     border-radius: 50%;
     background: radial-gradient(
         circle,
-        orange,
+        black,
         transparent 100%
     );
 }
@@ -705,11 +705,13 @@ body {
     }
 
     .featured-projects{
-        padding:60px 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
     }
 
     .what-i-do{
-        padding:60px 30px;
+        padding:40px 30px;
     }   
 
     .projects-grid{

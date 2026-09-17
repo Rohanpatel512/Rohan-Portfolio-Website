@@ -1,0 +1,89 @@
+[
+    {
+        "title": "Pneumonia Detection Model",
+        "description": "Developed a deep learning model that analyzes chest x-ray images to detect pneumonia. The model assists in early diagnosis by classifying images as normal or infected with high accuracy.",
+        "github": "https://github.com/Rohanpatel512/Pneumonia-Detection-Model",
+        "demo_video": null,
+        "try_out_link": null,
+        "skills": ["Python", "PyTorch", "CNN", "OpenCV"],
+        "type": "Computer Vision",
+        "image": "../assets/images/pneumonia.jpg"
+    },
+
+    {
+        "title": "ASL Fingerspelling Translator",
+        "description": "Real-time American Sign Language (ASL) fingerspelling recognition using a CNN model and OpenCV. Built a web interface for inference using webcam.",
+        "github": "https://github.com/Rohanpatel512/asl-video-translator",
+        "demo_video": "https://youtu.be/K3P74yN32jo",
+        "try_out_link": null,
+        "skills": ["Python", "PyTorch", "AWS", "CNN", "OpenCV", "YOLOv8", "FastAPI", "Hugging Face"],
+        "type": "Computer Vision",
+        "image": "../assets/images/fingerspelling.jpg"
+    },
+
+    {
+        "title": "AI Clinical Chatbot",
+        "description": "IN PROGRESS\n Designing a AI-powered chatbot that provides preliminary medical responses based on user symptoms and clinical knowledge.",
+        "github": "https://github.com/Rohanpatel512/AI-Clinician-Chatbot",
+        "demo_video": null, 
+        "try_out_link": null, 
+        "skills": ["Hugging Face", "NLP", "LLM", "Transformers", "Python"],
+        "type": "LLMs/NLP", 
+        "image": "../assets/images/chatbot.jpg"
+    },
+
+    {
+        "title": "Tweet Sentiment Analysis",
+        "description": "Built an NLP model that classifies tweets into positive or negative sentiment. It processes text data using feature extraction and machine learning techniques to understand public opinion trends.",
+        "github": "https://github.com/Rohanpatel512/Tweet-Sentiment-Analysis",
+        "demo_video": null, 
+        "try_out_link": null, 
+        "skills": ["NLP", "NLTK", "Logistic Regression", "Python"], 
+        "type": "LLMs/NLP", 
+        "image": "../assets/images/tweet_sentiment.png"
+    },
+
+    {
+        "title": "Breast Cancer Classification",
+        "description": "Created a machine learning classifier to predict whether breast tumors are malignant or benign based on diagnostic features. The model helps support early detection and decision-making in medical screening process.",
+        "github": "https://github.com/Rohanpatel512/Breast-Cancer-Classifier",
+        "demo_video": null, 
+        "try_out_link": null, 
+        "skills": ["Scikit-learn", "SVC", "NumPy", "Pandas", "Matplotlib", "Python"],
+        "type": "Machine Learning", 
+        "image": "../assets/images/cancer_classification.jpg"
+    },
+
+    {
+        "title": "Obesity Level Prediction",
+        "description": "Developed a predictive model that estimates obesity risk levels based on lifestyle and health-related attributes. The system identifies key contributing factors to help understand and prevent obesity.",
+        "github": "https://github.com/Rohanpatel512/Breast-Cancer-Classifier",
+        "demo_video": null, 
+        "try_out_link": null, 
+        "skills": ["Scikit-learn", "Decision Trees", "NumPy", "Pandas", "Matplotlib", "Python"],
+        "type": "Machine Learning", 
+        "image": "../assets/images/obesity_classification.jpg"
+    },
+
+    {
+        "title": "House Price Prediction Model",
+        "description": "Created a regression model that predicts housing prices based on features such as location, size, and amenities. The model helps estimate fair market value for real estate decision-making.",
+        "github": "https://github.com/Rohanpatel512/House-Price-Prediction",
+        "demo_video": null, 
+        "try_out_link": null, 
+        "skills": ["Scikit-learn", "Matplotlib", "Seaborn", "Numpy", "Pandas", "Python"],
+        "type": "Machine Learning",
+        "image": "../assets/images/house.jpg" 
+    },
+
+    {
+        "title": "AI Connect Four",
+        "description": "Developed an AI-powered Connect Four game as part of a team project, implementing and comparing two intelligent agents that competed against each other. The project explored game search algorithms, decision-making strategies, and AI performance through head-to-head gameplay.",
+        "github": "https://github.com/Rohanpatel512/AI_Connect_Four",
+        "demo_video": null, 
+        "try_out_link": null, 
+        "skills": ["Gemini Pro 1.5", "Min-Max Algorithm", "Python", "OOP"],
+        "type": "Other",
+        "image": "../assets/images/connect_four.jpg"
+    }
+]
